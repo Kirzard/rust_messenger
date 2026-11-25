@@ -1,14 +1,19 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
+struct User{
+	id: u32,
+	username: String
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+struct Message{
+	sender: User,
+	content: String
+}
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+impl User{
+	fn name(&self) -> &str{
+		&self.username
+	}
+
+	fn find_user(id: u32) -> Option<User>{
+		
+	}
 }
