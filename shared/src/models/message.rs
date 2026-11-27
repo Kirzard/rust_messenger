@@ -1,5 +1,3 @@
-use crate::models::message;
-
 pub struct Message{
 	sender_id: u32,
 	content: String
